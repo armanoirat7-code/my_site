@@ -1,0 +1,19 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      PORT: "8080"
+      SQLITE_PATH: /data/site.sqlite
+    volumes:
+      - site-data:/data
+      - site-uploads:/app/uploads
+    restart: unless-stopped
+
+volumes:
+  site-data:
+  site-uploads:

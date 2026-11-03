@@ -1,0 +1,12 @@
+{
+  "name": "pdf-generator",
+  "private": true,
+  "description": "Isolated read-only PDF export for orders, clients, and the catalog.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "puppeteer-core": "^24.15.0",
+    "qrcode": "^1.5.4"
+  }
+}

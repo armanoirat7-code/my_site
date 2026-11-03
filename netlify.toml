@@ -1,0 +1,41 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[dev]
+  command = "npm run dev"
+  targetPort = 5173
+  port = 8888
+
+[functions]
+  node_bundler = "esbuild"
+
+[functions.orders]
+  included_files = ["data/products.json"]
+
+[functions.products]
+  included_files = ["data/products.json"]
+
+[functions.login]
+  included_files = ["data/products.json", "data/contacts.json"]
+
+[functions.upload]
+  included_files = ["data/products.json"]
+
+[functions.chat]
+  included_files = ["data/products.json", "data/contacts.json"]
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

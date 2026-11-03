@@ -1,0 +1,48 @@
+{
+  "products": [
+    {
+      "id": "p-mu50vpko-xwh5k",
+      "name": "Дрон облет",
+      "description": "облетает дрон с 4-х ракурсов",
+      "price": 50000,
+      "currency": "₸",
+      "quantity": 1,
+      "type": "service",
+      "image": "/uploads/drone-fly.jpg",
+      "active": true
+    },
+    {
+      "id": "demo-1",
+      "name": "Аудит качества объекта",
+      "description": "Выездная проверка критических узлов и отчёт с приоритетами исправлений.",
+      "price": 150000,
+      "currency": "₸",
+      "quantity": 1,
+      "type": "service",
+      "image": "/uploads/audit-quality.jpg",
+      "active": true
+    },
+    {
+      "id": "demo-2",
+      "name": "Дрон-облёт площадки",
+      "description": "Съёмка объекта по маршруту и карта зон риска для инженера.",
+      "price": 90000,
+      "currency": "₸",
+      "quantity": 1,
+      "type": "service",
+      "image": "/uploads/drone-site.jpg",
+      "active": true
+    },
+    {
+      "id": "demo-3",
+      "name": "Пилот ИИ-контроля",
+      "description": "Тестовый цикл: дрон + анализ отклонений + демо-отчёт для заказчика.",
+      "price": 250000,
+      "currency": "₸",
+      "quantity": 1,
+      "type": "service",
+      "image": "/uploads/ai-pilot.jpg",
+      "active": true
+    }
+  ]
+}

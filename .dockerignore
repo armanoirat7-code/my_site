@@ -1,0 +1,16 @@
+node_modules
+dist
+.git
+.netlify
+.env
+.env.local
+data/site.sqlite
+data/site.sqlite-journal
+data/orders.json
+services
+*.log
+watchdog.log
+tmp-order.json
+post.json
+get.json
+ai-config.js

@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.DS_Store
+watchdog.log
+PUBLIC_URL.txt
+*.log
+.env
+.env.local
+.env.*.local
+!.env.example
+ai-config.js
+data/orders.json
+data/site.sqlite
+data/site.sqlite-journal
+tmp-order.json
+post.json
+get.json
+
+# Local Netlify folder
+.netlify
+services/pdf-generator/.cache/
